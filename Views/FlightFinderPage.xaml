@@ -42,26 +42,27 @@
                 HorizontalOptions="Center" />
 
             <Label  Text="Flight code" FontSize="Medium" WidthRequest="1510" Margin="30" ></Label>
-            <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Flight"></Entry>
+            <Entry x:Name="FlightCode"  Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Flight"></Entry>
             <Label Text="Airline" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
-            <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Airline"></Entry>
+            <Entry x:Name="FlightAirline" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Airline"></Entry>
             <Label Text="Day" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
-            <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Day"></Entry>
+            <Entry x:Name="FlightDay" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Day"></Entry>
             <Label Text="Time" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
-            <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Time"></Entry>
+            <Entry x:Name="Flightday" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Time"></Entry>
             <Label Text="Cost" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
-            <Entry WidthRequest="1500" Text=""  FontSize="Medium" Placeholder="Cost"></Entry>
+            <Entry x:Name="FlightCost" WidthRequest="1500" Text=""  FontSize="Medium" Placeholder="Cost"></Entry>
             <Label Text="Name" FontSize="Medium" WidthRequest="1510" Margin="30"></Label>
             <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Enter your name" Margin="5" Background="LightCyan"></Entry>
             <Label Text="Citizenship" FontSize="Medium" WidthRequest="1510" Margin="30"></Label>
             <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Enter your citizenship" Margin="5" Background="LightCyan"></Entry>
             <Button x:Name="Reutrn_home_From_finder_page" Text="Back" Clicked="Reutrn_home_From_finder_page_Clicked" WidthRequest="350" FontSize="Medium" Margin="50" Background="Orangered"></Button>
 
-            <ListView x:Name="ListOfFlights">
+            <ListView x:Name="ListOfFlights"
+                       ItemSelected="ListOfFlights_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding FlightName}"
-                                  Detail="{Binding Day}">
+                                  Detail="{Binding flightNumber}">
                         </TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

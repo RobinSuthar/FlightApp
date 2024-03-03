@@ -8,6 +8,7 @@ namespace FlightApp.Models
 {
     public class Flight
     {
+        public int flightNumber {  get; set; }
         public string FlightName { get; set; }
         public string Departure { get; set; }
         public string Day { get; set; }

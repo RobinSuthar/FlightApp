@@ -11,12 +11,7 @@ public partial class FlightFinderPage : ContentPage
     {
         InitializeComponent();
 
-        List<Flight> flights = new List<Flight>()
-    {
-        new Flight { FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" },
-        new Flight { FlightName = "Qatar  Airline", Departure = "GLC", Day = "Monday" },
-        new Flight { FlightName = "Indian Airline", Departure = "GLC", Day = "Monday" }
-    };
+        List<Flight> flights = FlightsRepo.GetFlights();
 
         ListOfFlights.ItemsSource = flights;
 
@@ -27,6 +22,8 @@ public partial class FlightFinderPage : ContentPage
         Shell.Current.GoToAsync("..");
     }
 
-
-   
+    private void ListOfFlights_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(FlightFinderPage));
+    }
 }
