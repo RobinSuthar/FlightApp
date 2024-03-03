@@ -1,3 +1,5 @@
+using FlightApp.Models;
+
 namespace FlightApp.Views;
 
 public partial class FlightFinderPage : ContentPage
@@ -26,10 +28,5 @@ public partial class FlightFinderPage : ContentPage
     }
 
 
-    public class Flight()
-    {
-        public string FlightName { get; set; }
-        public string Departure { get; set; }
-        public string Day { get; set; }
-    }
+   
 }
