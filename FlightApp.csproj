@@ -70,13 +70,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\flightpicture.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Remove="Views\NewPage1.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Include="C:\Users\robin\OneDrive\Desktop\GUI.xaml" Link="GUI.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  <None Remove="Resources\Images\hde.jpg" />
+	  <None Remove="Resources\Images\newflightpicture.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
