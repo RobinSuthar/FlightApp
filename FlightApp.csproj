@@ -70,7 +70,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\flightpicture.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Remove="Views\NewPage1.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\hde.jpg" />
+	  <None Remove="Resources\Images\newflightpicture.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

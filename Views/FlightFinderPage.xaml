@@ -32,7 +32,19 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <Entry x:Name="display_flights" Placeholder="Loading" WidthRequest="1500"></Entry>
+            <Entry x:Name="display_flights" Placeholder="Loading" WidthRequest="1500"> </Entry>
+
+            <ListView x:Name="ListOfFlights"
+            ItemSelected="ListOfFlights_ItemSelected">
+                <ListView.ItemTemplate  >
+                    <DataTemplate >
+                        <TextCell  Text="{Binding FlightName}"
+                      Detail="{Binding flightNumber}">
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
             <Label 
                 Margin="30"
                 Text="Reserve"
@@ -57,16 +69,7 @@
             <Entry Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Enter your citizenship" Margin="5" Background="LightCyan"></Entry>
             <Button x:Name="Reutrn_home_From_finder_page" Text="Back" Clicked="Reutrn_home_From_finder_page_Clicked" WidthRequest="350" FontSize="Medium" Margin="50" Background="Orangered"></Button>
 
-            <ListView x:Name="ListOfFlights"
-                       ItemSelected="ListOfFlights_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding FlightName}"
-                                  Detail="{Binding flightNumber}">
-                        </TextCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

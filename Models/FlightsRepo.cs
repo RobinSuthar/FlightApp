@@ -12,6 +12,23 @@ namespace FlightApp.Models
         static List<Flight> flights = new List<Flight>()
         {
             new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
+            new Flight { flightNumber  = 4367,FlightName = "Birtish Airline", Departure = "GLC", Day = "Monday" , Cost = 3233.23,Time= 12-12-2001},
             new Flight { flightNumber = 1367,FlightName = "Qatar  Airline", Departure = "GLC", Day = "Monday",Cost = 2533.23,Time= 11-08-2001 },
             new Flight { flightNumber = 5367,FlightName = "Indian Airline", Departure = "GLC", Day = "Monday",Cost = 6433.23,Time= 17-12-2021 }
         };
