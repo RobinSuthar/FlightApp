@@ -22,7 +22,7 @@
                 <Entry WidthRequest="350" FontSize="Medium" Placeholder="From"  Margin="16"></Entry>
                 <Entry WidthRequest="350" FontSize="Medium" Placeholder="To" Margin="16"></Entry>
                 <Entry WidthRequest="350" FontSize="Medium" Placeholder="Any" Margin="16"></Entry>
-                <Button Text="Find Flights" FontSize="Medium" WidthRequest="350" Margin="16" BackgroundColor="ForestGreen"></Button>
+                <Button x:Name="Find_flights_btn" Text="Find Flights" FontSize="Medium" WidthRequest="350" Margin="16" BackgroundColor="ForestGreen" Clicked="Find_flights_btn_Clicked"></Button>
             </HorizontalStackLayout>
             <Label 
                 Margin="30"
@@ -32,7 +32,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <Entry Placeholder="Loading" WidthRequest="1500"></Entry>
+            <Entry x:Name="display_flights" Placeholder="Loading" WidthRequest="1500"></Entry>
             <Label 
                 Margin="30"
                 Text="Reserve"
@@ -41,14 +41,14 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <Label  Text="Flight code" FontSize="Medium" WidthRequest="1510" Margin="30" ></Label>
+            <Label x:Name="zzz" Text="Flight code" FontSize="Medium" WidthRequest="1510" Margin="30" ></Label>
             <Entry x:Name="FlightCode"  Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Flight"></Entry>
             <Label Text="Airline" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
             <Entry x:Name="FlightAirline" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Airline"></Entry>
             <Label Text="Day" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
             <Entry x:Name="FlightDay" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Day"></Entry>
             <Label Text="Time" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
-            <Entry x:Name="Flightday" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Time"></Entry>
+            <Entry x:Name="FlightTime" Text="" FontSize="Medium" WidthRequest="1510" Placeholder="Time"></Entry>
             <Label Text="Cost" FontSize="Medium"  WidthRequest="1510" Margin="30"></Label>
             <Entry x:Name="FlightCost" WidthRequest="1500" Text=""  FontSize="Medium" Placeholder="Cost"></Entry>
             <Label Text="Name" FontSize="Medium" WidthRequest="1510" Margin="30"></Label>
