@@ -32,7 +32,23 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
+<<<<<<< Updated upstream
             <Entry Placeholder="Loading" WidthRequest="1500"></Entry>
+=======
+            <Entry x:Name="display_flights" Placeholder="Loading" WidthRequest="1500"> </Entry>
+            <SearchBar></SearchBar>
+            <ListView x:Name="ListOfFlights"
+            ItemSelected="ListOfFlights_ItemSelected">
+                <ListView.ItemTemplate  >
+                    <DataTemplate >
+                        <TextCell  Text="{Binding FlightName}"
+                      Detail="{Binding flightNumber}">
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+>>>>>>> Stashed changes
             <Label 
                 Margin="30"
                 Text="Reserve"
